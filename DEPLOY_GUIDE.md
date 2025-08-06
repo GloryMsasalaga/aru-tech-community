@@ -15,7 +15,7 @@ In your deploy.tz dashboard, set these environment variables:
 ```
 DEBUG=False
 SECRET_KEY=your-super-secret-key-here
-ALLOWED_HOSTS=*.deploy.tz,deploy.tz
+ALLOWED_HOSTS=localhost,127.0.0.1,aru-tech-community.deploy.tz,.deploy.tz
 DATABASE_URL=postgresql://user:password@host:port/database
 GOOGLE_CLIENT_ID=573256159763-dnme43v2sjbmuoajhu5pbup5k0c7v80s.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=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
@@ -34,7 +34,8 @@ Static files are handled by WhiteNoise and collected during the Docker build pro
 
 ### 5. Domain Configuration
 Once deployed, your app will be available at:
-- `https://your-app-name.deploy.tz`
+
+- `https://aru-tech-community.deploy.tz`
 
 ## Local Testing
 
